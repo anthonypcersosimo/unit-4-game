@@ -28,7 +28,6 @@
     background-image: url("../images/background.jpg");
     color: white;
     width: 500px;
-    top: 0;
     margin: 0 auto;
     font-size: 20pt;
     border-color: #66523d;
@@ -53,9 +52,15 @@
     position: relative;
 }
 
-h1, h2, p {
+h1, p {
     font-family: 'Bangers', cursive;
     letter-spacing: 1.5px;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
+    font-size: 24pt;
 }
 
 #miner {

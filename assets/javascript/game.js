@@ -17,6 +17,7 @@ $(document).ready(function() {
     
     $("#target-number").html("<p>Target Number: " + targetNumber + "</p>");
     $("#win-loss").html("<p>Wins: " + wins + " " + "Losses: " + losses + "</p>");
+    $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
 
     $(".top-right").on("click", function(){
         console.log(yellowCrystal);
