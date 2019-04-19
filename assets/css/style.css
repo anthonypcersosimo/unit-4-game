@@ -1,0 +1,78 @@
+/*Give the body a background*/
+#container {
+    background-image: url("../images/mine2.png  ");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#instructions-body {
+    background: whitesmoke;
+    width: 400px;
+    left: 10px;
+    bottom: 10px;
+    position: fixed;
+    border-color: #66523d;
+    border-width: 10px;
+    border-style: ridge;
+    text-align: center;
+    padding: 0;
+}
+
+#header {
+    background: whitesmoke;
+    width: 500px;
+    top: 0;
+    margin: 0 auto;
+    font-size: 20pt;
+    border-color: #66523d;
+    border-width: 10px;
+    border-style: ridge;
+    text-align: center;
+    padding: 0;
+}
+
+h1, h2, p {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px;
+}
+
+#miner {
+    width: 416px;
+    height: 416px;
+    z-index: 3;
+    position: absolute;
+}
+
+.imgs {
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+}
+
+/*PLACE CRYSTALS ON PAGE*/
+.bottom-right {
+    bottom: 50px;
+    right: 10px;
+    position: fixed;
+}
+.top-right {
+    top: 50px;
+    right: 10px;
+    position: fixed;
+}
+.bottom-mid {
+    bottom: 250px;
+    right: 10px;
+    position: fixed;
+}
+.top-mid {
+    top: 250px;
+    right: 10px;
+    position: fixed;
+}
+/* END CRYSTALS */
