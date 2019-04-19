@@ -11,7 +11,8 @@
 }
 
 #instructions-body {
-    background: whitesmoke;
+    background-image: url("../images/background.jpg");
+    color: white;
     width: 400px;
     left: 10px;
     bottom: 10px;
@@ -24,7 +25,8 @@
 }
 
 #header {
-    background: whitesmoke;
+    background-image: url("../images/background.jpg");
+    color: white;
     width: 500px;
     top: 0;
     margin: 0 auto;
@@ -34,6 +36,21 @@
     border-style: ridge;
     text-align: center;
     padding: 0;
+}
+
+
+.float {
+    background: whitesmoke;
+    width: 350px;
+    font-size: 19pt;
+    height: 60px;
+    left: 20px;
+    border-color: #d64227;
+    border-width: 6px;
+    border-style: ridge;
+    text-align: center;
+    padding: 0;
+    position: relative;
 }
 
 h1, h2, p {
