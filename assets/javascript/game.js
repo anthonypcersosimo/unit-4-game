@@ -64,6 +64,7 @@ function checkScore() {
         yourScore = 0;
         $("#win-loss").html("<p>Wins: " + wins + " " + "Losses: " + losses + "</p>");
         targetNumber = Math.floor((Math.random() * 120) + 19);
+        $("#target-number").html("<p>Target Number: " + targetNumber + "</p>");
     }
     if (yourScore > targetNumber) {
         alert("Well, you've overshot the target. Get back in there and try it again!");
@@ -71,5 +72,6 @@ function checkScore() {
         yourScore = 0;
         $("#win-loss").html("<p>Wins: " + wins + " " + "Losses: " + losses + "</p>");
         targetNumber = Math.floor((Math.random() * 120) + 19);
+        $("#target-number").html("<p>Target Number: " + targetNumber + "</p>");
     }
 }
