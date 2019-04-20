@@ -10,6 +10,9 @@ $(document).ready(function() {
     var redCrystal =  Math.floor((Math.random() * 12) + 1);
     var greenCrystal =  Math.floor((Math.random() * 12) + 1);
     var blueCrystal =  Math.floor((Math.random() * 12) + 1);
+    var audioElement = document.createElement("audio");
+    audioElement.setAttribute("src", "./assets/images/Builder_Game_Item_Pickaxe_Hit_Dirt_2.wav");
+
     console.log(yellowCrystal);
     console.log(redCrystal);
     console.log(greenCrystal);
@@ -20,6 +23,7 @@ $(document).ready(function() {
     $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
 
     $(".top-right").on("click", function(){
+        audioElement.play();
         // console.log(yellowCrystal);
         // console.log(yourScore);
         var newScore = yellowCrystal + yourScore;
@@ -30,6 +34,7 @@ $(document).ready(function() {
 
     }) 
     $(".top-mid").on("click", function(){
+        audioElement.play();
         // console.log(redCrystal);
         var newScore = redCrystal + yourScore;
         yourScore = newScore;
@@ -38,6 +43,7 @@ $(document).ready(function() {
         $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
     }) 
     $(".bottom-mid").on("click", function(){
+        audioElement.play();
         // console.log(greenCrystal);
         var newScore = greenCrystal + yourScore;
         yourScore = newScore;
@@ -46,6 +52,7 @@ $(document).ready(function() {
         $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
     }) 
     $(".bottom-right").on("click", function(){
+        audioElement.play();
         // console.log(blueCrystal);
         var newScore = blueCrystal + yourScore;
         yourScore = newScore;
