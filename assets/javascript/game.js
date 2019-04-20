@@ -20,15 +20,56 @@ $(document).ready(function() {
     $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
 
     $(".top-right").on("click", function(){
-        console.log(yellowCrystal);
+        // console.log(yellowCrystal);
+        // console.log(yourScore);
+        var newScore = yellowCrystal + yourScore;
+        yourScore = newScore;
+        // console.log(newScore);
+        checkScore()
+        $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
+
     }) 
     $(".top-mid").on("click", function(){
-        console.log(redCrystal);
+        // console.log(redCrystal);
+        var newScore = redCrystal + yourScore;
+        yourScore = newScore;
+        // console.log(newScore);
+        checkScore()
+        $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
     }) 
     $(".bottom-mid").on("click", function(){
-        console.log(greenCrystal);
+        // console.log(greenCrystal);
+        var newScore = greenCrystal + yourScore;
+        yourScore = newScore;
+        // console.log(newScore);
+        checkScore()
+        $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
     }) 
     $(".bottom-right").on("click", function(){
-        console.log(blueCrystal);
-    }) 
-})
+        // console.log(blueCrystal);
+        var newScore = blueCrystal + yourScore;
+        yourScore = newScore;
+        // console.log(newScore);
+        checkScore()
+        $("#your-score").html("<p>Your total score is: " + yourScore + "</p>");
+    })
+});
+
+function checkScore() {
+    console.log(yourScore);
+    console.log(targetNumber);
+    if (yourScore === targetNumber) {
+        alert("Yooo good job! You can do simple math!! Looks like all those years of higher education weren't a waste after all!");
+        wins++;
+        yourScore = 0;
+        $("#win-loss").html("<p>Wins: " + wins + " " + "Losses: " + losses + "</p>");
+        targetNumber = Math.floor((Math.random() * 120) + 19);
+    }
+    if (yourScore > targetNumber) {
+        alert("Well, you've overshot the target. Get back in there and try it again!");
+        losses++;
+        yourScore = 0;
+        $("#win-loss").html("<p>Wins: " + wins + " " + "Losses: " + losses + "</p>");
+        targetNumber = Math.floor((Math.random() * 120) + 19);
+    }
+}
